@@ -2,7 +2,6 @@ package com.epam.education.spring.service;
 
 import com.epam.education.spring.domain.DomainObject;
 
-import javax.annotation.Nonnull;
 import java.util.Collection;
 
 /**
@@ -17,14 +16,14 @@ public interface AbstractDomainObjectService<T extends DomainObject> {
      * @param object Object to save
      * @return saved object with assigned id
      */
-    T save(@Nonnull T object);
+    T save(T object);
 
     /**
      * Removing object from storage
      *
      * @param object Object to remove
      */
-    void remove(@Nonnull T object);
+    void remove(T object);
 
     /**
      * Getting object by id from storage
@@ -32,14 +31,12 @@ public interface AbstractDomainObjectService<T extends DomainObject> {
      * @param id id of the object
      * @return Found object or <code>null</code>
      */
-    T getById(@Nonnull Long id);
+    T getById(Long id);
 
     /**
      * Getting all objects from storage
      *
      * @return collection of objects
      */
-    public
-    @Nonnull
     Collection<T> getAll();
 }

@@ -3,7 +3,6 @@ package com.epam.education.spring.service;
 import com.epam.education.spring.domain.Event;
 import com.epam.education.spring.domain.User;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
 
@@ -22,5 +21,5 @@ public interface DiscountService {
      * @param numberOfTickets Number of tickets that user buys
      * @return discount value from 0 to 100
      */
-    byte getDiscount(@Nullable User user, @Nonnull Event event, @Nonnull LocalDateTime airDateTime, long numberOfTickets);
+    byte getDiscount(@Nullable User user, Event event, LocalDateTime airDateTime, long numberOfTickets);
 }

@@ -2,7 +2,6 @@ package com.epam.education.spring.service;
 
 import com.epam.education.spring.domain.User;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 /**
@@ -17,5 +16,5 @@ public interface UserService extends AbstractDomainObjectService<User> {
      * @return found user or <code>null</code>
      */
     @Nullable
-    User getUserByEmail(@Nonnull String email);
+    User getUserByEmail(String email);
 }

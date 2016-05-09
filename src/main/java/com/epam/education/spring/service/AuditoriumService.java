@@ -3,7 +3,6 @@ package com.epam.education.spring.service;
 
 import com.epam.education.spring.domain.Auditorium;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.Set;
 
@@ -17,7 +16,6 @@ public interface AuditoriumService {
      *
      * @return set of all auditoriums
      */
-    @Nonnull
     Set<Auditorium> getAll();
 
     /**
@@ -27,5 +25,5 @@ public interface AuditoriumService {
      * @return found auditorium or <code>null</code>
      */
     @Nullable
-    Auditorium getByName(@Nonnull String name);
+    Auditorium getByName(String name);
 }

@@ -4,7 +4,6 @@ import com.epam.education.spring.domain.Event;
 import com.epam.education.spring.domain.Ticket;
 import com.epam.education.spring.domain.User;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -25,8 +24,8 @@ public interface BookingService {
      * @param seats    Set of seat numbers that user wants to buy
      * @return total price
      */
-    double getTicketsPrice(@Nonnull Event event, @Nonnull LocalDateTime dateTime, @Nullable User user,
-                           @Nonnull Set<Long> seats);
+    double getTicketsPrice(Event event, LocalDateTime dateTime, @Nullable User user,
+                           Set<Long> seats);
 
     /**
      * Books tickets in internal system. If user is not
@@ -34,7 +33,7 @@ public interface BookingService {
      *
      * @param tickets Set of tickets
      */
-    void bookTickets(@Nonnull Set<Ticket> tickets);
+    void bookTickets(Set<Ticket> tickets);
 
     /**
      * Getting all purchased tickets for event on specific air date and time
@@ -43,6 +42,5 @@ public interface BookingService {
      * @param dateTime Date and time of airing of event
      * @return set of all purchased tickets
      */
-    @Nonnull
-    Set<Ticket> getPurchasedTicketsForEvent(@Nonnull Event event, @Nonnull LocalDateTime dateTime);
+    Set<Ticket> getPurchasedTicketsForEvent(Event event, LocalDateTime dateTime);
 }
