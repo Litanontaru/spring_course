@@ -86,5 +86,4 @@ public class User extends DomainObject {
         }
         return true;
     }
-
 }

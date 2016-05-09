@@ -88,5 +88,4 @@ public class Ticket extends DomainObject implements Comparable<Ticket> {
         }
         return result;
     }
-
 }

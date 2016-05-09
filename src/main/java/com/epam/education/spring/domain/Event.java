@@ -200,5 +200,4 @@ public class Event extends DomainObject {
         }
         return true;
     }
-
 }

@@ -84,5 +84,4 @@ public class Auditorium {
         }
         return true;
     }
-
 }
